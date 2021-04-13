@@ -12,7 +12,13 @@
           <title>Practica 01</title>
      </head>
      <body onload="cargarDatos()">
-          
+          <div class="row">
+               <div class="col" align="center">
+                    <input id="filtro"class="form-control text-center mt-3"
+                         type="text" placeholder="Ingrese un nombre por el cual buscar..."
+                         style="width: 50%" onkeydown="filtrarPorNombre(event)">
+               </div>
+          </div>
           <div class="row justify-content-center">
                <div class="col">
                     <table class="table table-striped vertical-scroll mt-2 mx-3">
