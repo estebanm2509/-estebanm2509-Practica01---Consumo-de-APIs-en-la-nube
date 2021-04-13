@@ -9,13 +9,14 @@ function cargarDatos() {
           tabla.innerHTML = "";
           for (let dato of response.data.animals) {
                tabla.innerHTML += `
-                    <p>
-                         ${dato.species},
-                         ${dato.gender},
-                         ${dato.size},
-                         ${dato.age},
-                         ${dato.status},
-                    <p>
+                    <tr class="row text-center">
+                         <td class="col">${dato.name}<td>
+                         <td class="col">${dato.species}<td>
+                         <td class="col">${dato.gender}<td>
+                         <td class="col">${dato.size}<td>
+                         <td class="col">${dato.age}<td>
+                         <td class="col">${dato.status}<td>
+                    </tr>
                `
           }
      });
